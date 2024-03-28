@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h style="font-weight: bold;">Overall ratings</h><br>
+        <ul id="u1" style="font-size: small;">*</ul>
+        <ul id="u2" style="font-size: small;">**</ul>
+        <ul id="u3" style="font-size: small;">***</ul>
+        <ul id="u4" style="font-size: small;">****</ul>
+        <ul id="u5" style="font-size: small;">*****</ul>
+        
+        <form onsubmit="handlesubmit(event)">
 
+            <h id="h1" style="font-weight: bold;">Feedback form</h><br>
+            <label for="name">Enter your name</label>
+            <input id="name" name="name" type="text"/>
+            <select id="rating" >
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select>
+            <button id="btn">Submit</button>
+            <button id="get">Get All</button>
+        </form><br>
+        <br>
+        <br>
+        <h id="h2" style="font-weight: bold;">All feedbacks</h><br>
+        <ul id="ul2"></ul>
+        
+       
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script src="feedback.js"></script>
+</html>
